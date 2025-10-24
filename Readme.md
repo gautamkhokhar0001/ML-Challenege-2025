@@ -1,5 +1,5 @@
 
-# ML Challenge 2025: Smart Product Pricing Solution Template (Filled)
+# ML Challenge 2025: Smart Product Pricing Solution
 
 **Team Name:** Defenders
 
