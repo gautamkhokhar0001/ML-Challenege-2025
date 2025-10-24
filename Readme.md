@@ -72,4 +72,29 @@ A compact text‑only model with attention pooling and MSD yields strong SMAPE w
 ### A. Code artefacts
 https://drive.google.com/drive/folders/1j9ET7JwEYgKenWU3WSabQ9H6HqVGpoUT
 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Example Flow diagram:
+
+"premium leather office chair..."
+        │
+        ▼
+[Tokenizer]
+→ [input_ids]: [101, 12568, 4532, ...]
+        │
+        ▼
+[Transformer Encoder (MiniLM)]
+→ Contextual embeddings: [14 tokens × 384 dims]
+        │
+        ▼
+[MultiHeadAttnPool]
+→ Weighted summary vector: [1 × 384]
+        │
+        ▼
+[FeedForward Regression Head]
+→ Predicted log(price): [1 × 1]
+        │
+        ▼
+[expm1]
+→ Final price ≈ ₹17.6k
+
 
